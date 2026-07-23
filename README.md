@@ -1,85 +1,59 @@
 # 🎓 Student Success Predictor
 
-An AI-based Student Performance Prediction System that predicts a student's final score using Machine Learning.
+A Machine Learning based web application that predicts a student's final score based on academic factors like study hours, attendance, previous marks, and assignment performance.
 
-## 📌 Project Overview
+## 🚀 Project Overview
 
-This project uses student academic information like study hours, attendance, previous marks, and assignment performance to predict the final score.
+This project uses a Machine Learning regression model to analyze student academic data and predict the expected final score. A Flask web interface is created where users can enter student details and get predictions instantly.
 
-The system provides:
-- Predicted Final Score
-- Grade Prediction
-- Performance Level
-- Success Probability
-- Risk Analysis
-- AI-based Suggestions
+## ✨ Features
 
-
-## 🚀 Features
-
-✅ Student performance prediction  
-✅ Machine Learning based model  
-✅ Web-based interface  
-✅ Real-time prediction  
-✅ Performance analysis  
-✅ User-friendly UI  
-
+- Predict student final score
+- Simple user-friendly web form
+- Machine Learning based prediction
+- Data analysis and visualization
+- Flask web application
 
 ## 🛠️ Technologies Used
 
 - Python
-- Flask
 - Pandas
 - NumPy
 - Scikit-learn
+- Flask
 - Matplotlib
 - Seaborn
-- HTML
-- CSS
+- HTML/CSS
 
+## 📊 Input Features
 
-## 🤖 Machine Learning Model
+The model takes these inputs:
 
-Model Used:
-
-**Random Forest Regressor**
-
-Dataset:
-- 10,000 student records
-
-Input Features:
 - Study Hours
-- Attendance
+- Attendance Percentage
 - Previous Marks
 - Assignment Score
 
-Target:
-- Final Score
+## 📈 Model Performance
 
-
-## 📊 Model Performance
-
-Evaluation Results:
+Model Evaluation:
 
 - MAE: 2.67
 - RMSE: 3.33
 - R² Score: 0.8933
 
-
 ## 📂 Project Structure
-Student_Success_Predictor
-
-│── app.py
-│── student_model.pkl
-│── student_data.csv
-│── train_model.py
-│── analysis.py
-│── visualization.py
-│── predict_test.py
-
-│── templates
-│ └── index.html
-
+Student-Success-Predictor/
+│
+├── app.py
+├── train_model.py
+├── analysis.py
+├── visualization.py
+├── student_data.csv
+├── requirements.txt
+│
+└── templates/
+└── index.html
 
 
 ## ▶️ How to Run
@@ -87,15 +61,13 @@ Student_Success_Predictor
 Install required libraries:
 
 
-pip install pandas numpy scikit-learn flask matplotlib seaborn joblib
+pip install -r requirements.txt
 
 
-
-Run application:
+Run Flask application:
 
 
 python app.py
-
 
 
 Open browser:
@@ -104,16 +76,6 @@ Open browser:
 http://127.0.0.1:5000
 
 
-
-## 🎯 Future Improvements
-
-- Add database support
-- Student login system
-- Online deployment
-- More ML models comparison
-- Admin dashboard
-
-
-## 👩‍💻 Developer
+## 👩‍💻 Author
 
 Khushi Kumari
